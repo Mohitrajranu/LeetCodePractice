@@ -22,6 +22,9 @@ public class GettingClassObject {
         con.setAccessible(true);
         MyClass m=(MyClass)con.newInstance();
 
+        System.out.println(m.getClass());
+
+
        // MyClass m= new MyClass();
         Class<? extends MyClass> class1= m.getClass();
         //super class
