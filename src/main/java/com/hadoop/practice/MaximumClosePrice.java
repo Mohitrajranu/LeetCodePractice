@@ -30,8 +30,10 @@ public class MaximumClosePrice {
         job.setInputFormatClass(TextInputFormat.class);
         job.setOutputFormatClass(TextOutputFormat.class);
         //set mapper and reduce classes
-        //job.setMapperClass();
-        //job.setReducerClass();
+        job.setMapperClass(MaxClosePriceMapper.class);
+
+        job.setCombinerClass(MaxClosePriceReducer.class);
+        job.setReducerClass(MaxClosePriceReducer.class);
         //output types
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(FloatWritable.class);

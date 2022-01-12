@@ -27,7 +27,7 @@ public class TwoSum {
         TwoSum twoSum = new TwoSum();
         int []nums = {2,7,9,11,13};
         int target = 11;
-        twoSum.twoSum(nums,target);
+       // twoSum.twoSum(nums,target);
         Arrays.stream(twoSum.twoSum(nums,target)).forEach(System.out::println);
     }
 }
