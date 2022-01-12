@@ -17,8 +17,8 @@ public class ValidPalindrome {
         int right=s.length() -1;
         while(left<right){
             if(s.charAt(left) != s.charAt(right)){
-                ValidPalindrome vp = new ValidPalindrome();
-                return (vp.validSubPalindrome(s,left+1,right) || vp.validSubPalindrome(s,left,right-1));
+
+                return (validSubPalindrome(s,left+1,right) || validSubPalindrome(s,left,right-1));
             }
             left++;
             right--;
