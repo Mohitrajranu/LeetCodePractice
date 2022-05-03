@@ -28,7 +28,7 @@ public class ValidPalindrome {
 
     public static void main(String[] args) {
         ValidPalindrome vp = new ValidPalindrome();
-        System.out.println(vp.validPalindrome("abca"));
+        System.out.println(vp.validPalindrome("abcda"));
 
     }
 }
