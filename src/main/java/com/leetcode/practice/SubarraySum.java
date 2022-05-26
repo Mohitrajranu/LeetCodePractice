@@ -12,7 +12,7 @@ public class SubarraySum {
         mp.put(0,1);
         for (int i = 0; i <nums.length ; i++) {
             prefixSum+=nums[i];
-            ans=mp.getOrDefault(prefixSum-k,0);
+            ans+=mp.getOrDefault(prefixSum-k,0);
             mp.put(prefixSum,mp.getOrDefault(prefixSum,0)+1);
         }
 
