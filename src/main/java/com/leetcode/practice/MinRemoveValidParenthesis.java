@@ -21,7 +21,6 @@ public class MinRemoveValidParenthesis {
             int index=st.pop();
             stArr[index]="";
         }
-        String result= String.join("",stArr);
        return String.join("",stArr);
     }
 }
