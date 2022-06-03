@@ -18,8 +18,16 @@ public class PeakElement {
 
     public static void main(String[] args) {
         int[] nums={17,4,12,13,5};
-        PeakElement pk = new PeakElement();
-        int max= pk.findPeakElement(nums);
-        System.out.println(max);
+        String id="12345#45678#8967#34219";
+        String[] split = id.split("#", 2);
+        
+        String trid=split[0];
+        String key=split[1];
+
+        System.out.println(trid);
+        System.out.println(key);
+       // PeakElement pk = new PeakElement();
+      //  int max= pk.findPeakElement(nums);
+       // System.out.println(max);
     }
 }

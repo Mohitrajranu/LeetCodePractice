@@ -16,6 +16,10 @@ public class BinarySearch {
         }
         return -1;
     }
+
+    public static void main(String[] args) {
+
+    }
     public int[] searchRange(int[] nums, int target) {
 
         if(nums.length==0){
